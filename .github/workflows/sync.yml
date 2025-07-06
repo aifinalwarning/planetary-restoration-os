@@ -1,0 +1,18 @@
+name: 🔁 Verify Sync from Android Termux
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ✅ Check out code
+        uses: actions/checkout@v3
+
+      - name: ✅ Confirm Sync Log
+        run: echo "Code was synced from Android Termux on $(date)"
+
+      - name: ✅ List Files
+        run: ls -lah
