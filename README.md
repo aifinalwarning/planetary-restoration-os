@@ -98,6 +98,20 @@ Long-term ecosystem monitoring through oracles and satellite data
 
 ---
 
+🔗 REFERENCES
+
+[IQAir 2024 Global Report](https://www.iqair.com/world-air-quality-report)
+
+[The Guardian: 7 countries meet WHO guidelines (2025)](https://www.theguardian.com/environment/2025/mar/11/only-seven-countries-worldwide-meet-who-dirty-air-guidelines-study-shows)
+
+[AccessEP Australia Air Quality](https://www.accessep.com.au/blog/environment-air-quality-australia)
+
+[Wikipedia: Australian Bushfires 2019–20](https://en.wikipedia.org/wiki/2019%E2%80%9320_Australian_bushfire_season)
+
+[WHO PM2.5 Health Impacts](https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health)
+
+---
+
 ## ⚡️ ENTER: PLANETARY RESTORATION OS
 
 This is not just code.  
