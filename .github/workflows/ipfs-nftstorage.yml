@@ -1,0 +1,26 @@
+name: 🔁 Auto Upload to NFT.Storage
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  pin-to-ipfs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: 📦 Install NFT.Storage CLI
+        run: npm install -g nft.storage
+
+      - name: 🔐 Write API token
+        run: echo "${{ secrets.NFT_STORAGE_TOKEN }}" > .nft-token
+
+      - name: 🚀 Upload to IPFS via NFT.Storage
+        run: |
+          export NFT_STORAGE_API_KEY=$(cat .nft-token)
+          nft.storage store-directory ./ --name "planetary-restoration-os"
+
+      - name: ✅ Finished
+        run: echo "📡 Repo uploaded to IPFS via NFT.Storage"
